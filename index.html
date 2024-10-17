@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="error-display-container">
+        <p></p>
+    </div>
+    <form id="form">
+        <h1>FORM</h1>
+    <div class="name-age-container">
+        <div class="name-container">
+            <label for="fname"> NAME:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+            <p id="name-error-message" class="error"> Please enter your name</p>
+        </div>
+
+        <div class="age-container">
+            <label for="Age"> AGE:</label><br>
+            <input type="text" id="age" age="age" placeholder="Enter your age">
+            <p id="age-error-message" class="error"> Please enter your age</p>
+        </div>
+    </div>
+    <div class="phno-email-container">
+        <div class="phno-container">
+            <label for="phno"> MOBILE:</label><br>
+            <input type="text" id="mobile" mobile="mobile" placeholder="Enter your phno">
+            <p id="mobile-error-message" class="error"> Enter your valid phno</p>
+        </div>
+        <div class="email-container">
+            <label id="label" for="email"> EMAIL:</label><br>
+            <input type="text" id="mail" mail="mail" placeholder="Enter your email" >
+            <p id="email-error-message" class="error">Enter your valid email</p>
+        </div>
+
+    </div>
+<div class="secondary-phno-container-main">
+    <div class="secondary-phno-radio-container">
+        <label for="yes_no_radio">Do you have secondary phno:</label><br>
+        <input type="radio" name="yes_no" value="yes"  onchange="secondaryMobileChecked(this)">Yes</input>
+        <input type="radio" name="yes_no" value="no" checked onchange="secondaryMobileChecked(this)">No</input>
+    </div>
+
+    <div class="phnumber-container">
+        <label for="phno"> MOBILE:</label><br>
+        <input type="text" id="secondary-mobile" mobile="mobile" placeholder="Enter your phno">
+        <p id="phno-error-message" class="error"> Enter your valid phno</p>
+    </div>
+</div>
+
+
+    <div class="gender-container">
+        <label for="yes_no">GENDER:</label> <br>
+        <input  type="radio" name="gender" value="male" >Male</input>
+        <input type="radio" name="gender" value="female">Female</input>
+        <input type="radio" name="gender" value="other">Other</input>
+        <p id="gender-error-message" class="error"> Please select your gender</p>
+
+    </div>
+
+    <div class="technology-container">
+        <label for="cars">Choose your fav technology:</label> 
+        <select name="tech" id="tech">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JS</option>
+          <option value="java">JAVA</option>
+        </select>
+    </div> <br><br>
+        
+    <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
